@@ -103,6 +103,8 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy/private
+SELINUX_IGNORE_NEVERALLOWS := true
+SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
 DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
 DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
@@ -117,10 +119,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-
-ifneq ($(TARGET_BUILD_VARIANT),user)
-SELINUX_IGNORE_NEVERALLOWS := true
-endif
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
