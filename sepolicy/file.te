@@ -13,3 +13,6 @@ type sysfs_power_management, fs_type, sysfs_type;
 type sysfs_ramdumps, fs_type, sysfs_type;
 
 type rfkill_device, dev_type;
+
+# FPS Info
+type sysfs_fps, sysfs_type, fs_type;
