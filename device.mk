@@ -565,3 +565,8 @@ $(call inherit-product-if-exists, $(LOCAL_PATH)/wlan/bcm.mk)
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-10-05
+
+# Soc
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8974
