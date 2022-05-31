@@ -335,6 +335,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.pam=false \
     ro.qti.sdk.sensors.gestures=false
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Enable some debug messages by default
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.sensors.hal=w \
