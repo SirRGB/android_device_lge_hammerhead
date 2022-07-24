@@ -1,17 +1,16 @@
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
+$(call inherit-product, vendor/rr/config/common_mini_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hammerhead
-PRODUCT_NAME := lineage_hammerhead
+PRODUCT_NAME := rr_hammerhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
