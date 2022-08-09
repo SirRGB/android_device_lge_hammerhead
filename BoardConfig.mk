@@ -77,11 +77,6 @@ TARGET_SCREEN_DENSITY := 480
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Dex-preopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
-endif
 USE_DEX2OAT_DEBUG := false
 DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT_DEBUG_INFO := false
