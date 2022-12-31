@@ -290,8 +290,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=opengl \
-    debug.hwui.use_buffer_age=false
+    debug.hwui.renderer=opengl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
