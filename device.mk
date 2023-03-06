@@ -266,7 +266,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=opengl \
+    debug.hwui.renderer=skiagl \
     debug.hwui.use_buffer_age=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
