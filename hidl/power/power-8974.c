@@ -96,7 +96,10 @@ static int profile_bias_power[] = {
 };
 
 static int profile_bias_performance[] = {
-    CPUS_ONLINE_MIN_4
+    CPU0_MIN_FREQ_NONTURBO_MAX + 1,
+    CPU1_MIN_FREQ_NONTURBO_MAX + 1,
+    CPU2_MIN_FREQ_NONTURBO_MAX + 1,
+    CPU3_MIN_FREQ_NONTURBO_MAX + 1
 };
 // clang-format on
 
