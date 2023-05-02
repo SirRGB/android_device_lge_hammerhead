@@ -110,6 +110,8 @@ DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_HAS_HH_VSYNC_ISSUE := true
 
+TARGET_TOUCHBOOST_FREQUENCY:= 1200
+
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/cameraserver=22 \
     /system/bin/mediaserver=22 \
@@ -131,10 +133,6 @@ MALLOC_SVELTE := true
 
 # VNDK
 TARGET_VNDK_USE_CORE_VARIANT := true
-
-# Power
-TARGET_USES_INTERACTION_BOOST := true
-TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true

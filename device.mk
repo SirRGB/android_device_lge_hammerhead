@@ -277,7 +277,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.hh
+    android.hardware.power@1.0-impl \
+    power.hammerhead
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
