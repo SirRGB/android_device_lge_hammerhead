@@ -1,5 +1,2 @@
 # Timekeep
 type vendor_timekeep_prop, property_type;
-
-# FastCharge
-type fastcharge_prop, property_type;
